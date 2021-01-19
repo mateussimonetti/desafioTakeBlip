@@ -1,0 +1,15 @@
+{
+  "name": "backend_node_express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [],
+  "author": "Mateus Daniel Simonetti - https://github.com/mateussimonetti",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
