@@ -5,9 +5,9 @@ const Schema = mongoose.Schema;
 
 const productModel = new Schema(
   {
-    user: { type: Schema.Types.ObjectId, ref: "user", required: "true" },
+    user: { type: Schema.Types.ObjectId, required: "true" },
     title: { type: String, required: true, trim: true },
-    price: { type: Number, required: true },
+    price: { type: String, required: true },
     description: { type: String, required: true },
     buyURL: { type: String, required: false, trim: true },
     status: { type: Boolean, required: true, default: true },

@@ -15,10 +15,8 @@ const userModel = new Schema(
 );
 
 userModel.pre("save", (next) => {
-  //   let now = new Date();
-  //   if (!this.creationDate) {
-  //     this.creationDate = now;
-  //   }
+  //   do something
+  next();
 });
 
 module.exports = mongoose.model("user", userModel);

@@ -5,11 +5,14 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "dev": "nodemon api.js"
   },
   "keywords": [],
   "author": "Mateus Daniel Simonetti - https://github.com/mateussimonetti",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.11.13",
+    "nodemon": "^2.0.7"
   }
 }
