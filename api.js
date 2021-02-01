@@ -4,8 +4,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const expressJwt = require("express-jwt");
 const cors = require("cors");
-const connectString =
-  "mongodb://mateussmntt:elt1a2015@cluster0-shard-00-00.njotv.mongodb.net:27017,cluster0-shard-00-01.njotv.mongodb.net:27017,cluster0-shard-00-02.njotv.mongodb.net:27017/treinamento_react?ssl=true&replicaSet=atlas-23d88y-shard-0&authSource=admin&retryWrites=true&w=majority";
+const connectString = process.env.MONGO_URI;
 
 mongoose.connect(connectString, {
   useNewUrlParser: true,
@@ -16,7 +15,7 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use(
   expressJwt({
-    secret: `^b,"ziX$%EXJ:RH/tS[IHeqn"'^^/8`,
+    secret: process.env.JWT_SECRET,
     algorithms: ["HS256"],
   }).unless({
     path: ["/auth", "/auth/login", "/product"],

@@ -6,14 +6,16 @@
   "license": "MIT",
   "scripts": {
     "test": "test",
-    "dev": "nodemon api.js"
+    "dev": "nodemon -r dotenv/config api.js dotenv_config_path=./.env.dev"
   },
   "keywords": [],
   "author": "Mateus Daniel Simonetti - https://github.com/mateussimonetti",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-jwt": "^6.0.0",
+    "md5": "^2.3.0",
     "mongoose": "^5.11.13",
     "nodemon": "^2.0.7"
   }
