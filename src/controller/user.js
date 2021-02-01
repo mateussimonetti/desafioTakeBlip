@@ -1,5 +1,6 @@
 "use strict";
 const repository = require("../repository/user");
+const jwt = require("jsonwebtoken");
 
 exports.getAllUsers = async (req, res, next) => {
   try {
@@ -61,6 +62,33 @@ exports.virtualDeleteUser = async (req, res, next) => {
     res.status(200).send({
       message: "User successfully disabled",
       data: disabled,
+    });
+  } catch (err) {
+    res.status(500).send({
+      message: "Ops, something went wrong!",
+      error: err,
+    });
+  }
+};
+
+exports.login = async (req, res, next) => {
+  try {
+    console.log(req.body);
+    const user = await repository.autenticate(req.body);
+
+    if (!user) {
+      res.status(404).send({
+        message: "Usuário ou Senha inválidos ",
+      });
+      return;
+    }
+    var token = jwt.sign(
+      { userID: user._id },
+      `^b,"ziX$%EXJ:RH/tS[IHeqn"'^^/8`,
+      { expiresIn: "1h" }
+    );
+    res.status(201).send({
+      token: token,
     });
   } catch (err) {
     res.status(500).send({

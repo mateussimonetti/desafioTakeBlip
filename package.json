@@ -11,7 +11,9 @@
   "keywords": [],
   "author": "Mateus Daniel Simonetti - https://github.com/mateussimonetti",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
+    "express-jwt": "^6.0.0",
     "mongoose": "^5.11.13",
     "nodemon": "^2.0.7"
   }

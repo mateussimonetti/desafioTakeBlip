@@ -37,3 +37,10 @@ exports.virtualDelete = async (id) => {
     $set: { status: false },
   });
 };
+
+exports.autenticate = async (data) => {
+  return await User.findOne({
+    email: data.email,
+    password: data.password,
+  });
+};
