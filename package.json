@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "test": "test",
-    "dev": "nodemon -r dotenv/config api.js dotenv_config_path=./.env.dev"
+    "dev": "nodemon api.js"
   },
   "keywords": [],
   "author": "Mateus Daniel Simonetti - https://github.com/mateussimonetti",
