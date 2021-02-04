@@ -5,8 +5,8 @@
 
 **Algumas coisas importantes de se ressaltar:**
 
-    * O desafio nos pede uma API, porém, para ser consumida pelo bot, é necessário que esta seja uma API pública. Porém, não encontrei nenhum hoster gratuito em que pudesse hospedar a aplicação e a API. Para testar e verificar o funcionamento, utilizei o _ngrok_, que permite criar um link público para sua API hospedada em localhost;
+> O desafio nos pede uma API, porém, para ser consumida pelo bot, é necessário que esta seja uma API pública. Porém, não encontrei nenhum hoster gratuito em que pudesse hospedar a > aplicação e a API. Para testar e verificar o funcionamento, utilizei o _ngrok_, que permite criar um link público para sua API hospedada em localhost;
 
-    * As imagens utilizadas no card dos valores são semelhantes às do fluxo exemplificado, e estão hospedadas na minha conta do _ImgBB_
+> As imagens utilizadas no card dos valores são semelhantes às do fluxo exemplificado, e estão hospedadas na minha conta do _ImgBB_
 
-    * O ChatBot criado foi feito pensando em deixar a interação com o usuário o mais próximo da realidade. Por isso, coloquei _delays_ de digitação maiores e mensagens mais descontraídas
+> O ChatBot criado foi feito pensando em deixar a interação com o usuário o mais próximo da realidade. Por isso, coloquei _delays_ de digitação maiores e mensagens mais descontraídas
